@@ -96,7 +96,7 @@ public class Monster_behaviour : MonoBehaviour
 
     private void Monsterwander()
     {
-        //When the monster should change direction, a random vector is chosen and the player rotates to the new vector
+        //When the monster should change direction, a random vector is chosen and the monster rotates to the new vector
         if (direction_change_cooldown <= 0) 
         {
             old_monster_direction = new_monster_direction;

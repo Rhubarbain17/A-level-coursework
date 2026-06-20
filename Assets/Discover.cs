@@ -14,7 +14,7 @@ public class Discover : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (Mathf.Sqrt(Mathf.Pow(transform.position.x - player.position.x,2)) <= 1 || Mathf.Sqrt(Mathf.Pow(transform.position.y - player.position.y,2)) <= 1)
+        if (Mathf.Sqrt(Mathf.Pow(transform.position.x - player.position.x,2)) <= 5 || Mathf.Sqrt(Mathf.Pow(transform.position.y - player.position.y,2)) <= 5)
         {
             count.bodies += 1;
             Destroy(hitbox);

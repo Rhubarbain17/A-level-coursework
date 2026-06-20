@@ -11,7 +11,7 @@ public class Player_movement : MonoBehaviour
     private float current_speed;
     public float current_sprint = 100;
     private bool sprinting;
-    private int sprint_cooldown = 180;
+    private int sprint_cooldown = 0;
     private Animator _animator;
     private GameObject Turn_Back;
     public int bodies;
@@ -46,20 +46,24 @@ public class Player_movement : MonoBehaviour
 
     private void Playermove()
     {
-        //Grabs the player input and moves the player respectively in either direction
-        var input = new Vector2(x:Input.GetAxisRaw("Horizontal"), y: Input.GetAxisRaw("Vertical"));
+        //Get direction from player to mouse in world space
+        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 toMouse = (mouseWorldPos - transform.position).normalized;
+
+        //Only W and S are needed with new movement
+        Vector2 forward = toMouse;
+
+        //Read inputs
+        Vector2 input = Vector2.zero;
+        if (Input.GetKey(KeyCode.W)) input += forward;
+        if (Input.GetKey(KeyCode.S)) input -= forward;
+
         _rigidbody.velocity = input.normalized * current_speed;
-        
-        //Controls the player animation, checking to see if they are moving
-        if (input.normalized == new Vector2(0, 0))
-        {
-            _animator.SetBool("is_moving",false);
-        }
-        else
-        {
-            _animator.SetBool("is_moving", true);
-        }
+
+        //Animation
+        _animator.SetBool("is_moving", input != Vector2.zero);
     }
+
     private void Playersprint()
     {
         //Increases Speed if shift is pressed and decreases the sprint meter
@@ -87,7 +91,7 @@ public class Player_movement : MonoBehaviour
         current_sprint = Mathf.Min(current_sprint, 100);
         current_sprint = Mathf.Max(current_sprint, 0);
 
-        //Places sprint on a 3 second cooldown when it current_sprint reaches 0, to ensure the player doesn't continously sprint
+        //Places sprint on a 3 second cooldown when it current_sprint reaches 0, to ensure the player doesn't continously sprint by holding it down
         if (current_sprint == 0 && sprint_cooldown == 180 && Input.GetKey(KeyCode.LeftShift))
         {
             sprint_cooldown = 0;
