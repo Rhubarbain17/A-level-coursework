@@ -37,7 +37,7 @@ public class Monster_behaviour : MonoBehaviour
         {
             Monsterchase();
             monster_speed = 2 + 0.25f * count.bodies;
-            flashlight.SetActive(true);
+            heart.SetActive(true);
             lighttime = 0.1f;
         }
         //The monster stalks the player within a given range
@@ -45,8 +45,7 @@ public class Monster_behaviour : MonoBehaviour
         {
             Monsterchase();
             monster_speed = 0.5f + 0.4f * count.bodies;
-            //Makes the light flicker and heart beat if the monster is near
-            heart.SetActive(true);
+            //Makes the light flicker the stalking the player
             if (lighttime >= 0 && lighttime <= 0.1f) 
             { 
                 flashlight.SetActive(false);

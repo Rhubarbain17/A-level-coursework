@@ -44,7 +44,7 @@ public class MainMenu : MonoBehaviour
     {
         issprint = sprinton.isOn;
     }
-    //Checks if the player wants to change thier volume
+    //Checks if the player wants to change their volume
     public void VolumeChange(float volume)
     {
         audiomixer.SetFloat("volume", volume);

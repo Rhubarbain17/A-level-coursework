@@ -60,14 +60,13 @@ public class Player_movement : MonoBehaviour
 
         _rigidbody.velocity = input.normalized * current_speed;
 
-        //Animation
-        _animator.SetBool("is_moving", input != Vector2.zero);
+        _animator.SetBool("is_moving", Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S));
     }
 
     private void Playersprint()
     {
         //Increases Speed if shift is pressed and decreases the sprint meter
-        if (Input.GetKey(KeyCode.LeftShift) && current_sprint > 0)
+        if (Input.GetKey(KeyCode.LeftShift) && current_sprint > 0 && _rigidbody.velocity.sqrMagnitude > 0)
         {
             current_speed = speed * sprint_multiplier;
             current_sprint -= 2F;
