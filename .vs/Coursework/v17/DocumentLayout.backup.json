@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\rhuba\\Coursework\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9E35EA32-85BB-DE78-06A9-4C1642467304}|Assembly-CSharp.csproj|C:\\Users\\rhuba\\Coursework\\assets\\monster_behaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E35EA32-85BB-DE78-06A9-4C1642467304}|Assembly-CSharp.csproj|solutionrelative:assets\\monster_behaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E35EA32-85BB-DE78-06A9-4C1642467304}|Assembly-CSharp.csproj|c:\\users\\rhuba\\coursework\\assets\\player_movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9E35EA32-85BB-DE78-06A9-4C1642467304}|Assembly-CSharp.csproj|C:\\Users\\rhuba\\Coursework\\assets\\player_movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E35EA32-85BB-DE78-06A9-4C1642467304}|Assembly-CSharp.csproj|solutionrelative:assets\\player_movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E35EA32-85BB-DE78-06A9-4C1642467304}|Assembly-CSharp.csproj|C:\\Users\\rhuba\\Coursework\\assets\\discover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E35EA32-85BB-DE78-06A9-4C1642467304}|Assembly-CSharp.csproj|solutionrelative:assets\\discover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E35EA32-85BB-DE78-06A9-4C1642467304}|Assembly-CSharp.csproj|c:\\users\\rhuba\\coursework\\assets\\monster_behaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E35EA32-85BB-DE78-06A9-4C1642467304}|Assembly-CSharp.csproj|solutionrelative:assets\\monster_behaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E35EA32-85BB-DE78-06A9-4C1642467304}|Assembly-CSharp.csproj|C:\\Users\\rhuba\\Coursework\\assets\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E35EA32-85BB-DE78-06A9-4C1642467304}|Assembly-CSharp.csproj|solutionrelative:assets\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E35EA32-85BB-DE78-06A9-4C1642467304}|Assembly-CSharp.csproj|C:\\Users\\rhuba\\Coursework\\assets\\discover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E35EA32-85BB-DE78-06A9-4C1642467304}|Assembly-CSharp.csproj|solutionrelative:assets\\discover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E35EA32-85BB-DE78-06A9-4C1642467304}|Assembly-CSharp.csproj|C:\\Users\\rhuba\\Coursework\\assets\\camera_movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,24 +30,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "C:\\Users\\rhuba\\Coursework\\Assets\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\MainMenu.cs",
               "ToolTip": "C:\\Users\\rhuba\\Coursework\\Assets\\MainMenu.cs",
               "RelativeToolTip": "Assets\\MainMenu.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwC4AAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAA9wBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-16T16:04:59.32Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Discover.cs",
               "DocumentMoniker": "C:\\Users\\rhuba\\Coursework\\Assets\\Discover.cs",
               "RelativeDocumentMoniker": "Assets\\Discover.cs",
@@ -55,18 +55,17 @@
               "RelativeToolTip": "Assets\\Discover.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T13:59:54.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T13:59:54.126Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Monster_behaviour.cs",
               "DocumentMoniker": "C:\\Users\\rhuba\\Coursework\\Assets\\Monster_behaviour.cs",
               "RelativeDocumentMoniker": "Assets\\Monster_behaviour.cs",
               "ToolTip": "C:\\Users\\rhuba\\Coursework\\Assets\\Monster_behaviour.cs",
               "RelativeToolTip": "Assets\\Monster_behaviour.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwHMAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwC4AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T16:05:06.393Z",
               "EditorCaption": ""
@@ -79,20 +78,19 @@
               "RelativeDocumentMoniker": "Assets\\Camera_Movement.cs",
               "ToolTip": "C:\\Users\\rhuba\\Coursework\\Assets\\Camera_Movement.cs",
               "RelativeToolTip": "Assets\\Camera_Movement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T17:35:50.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-10T17:35:50.582Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Player_movement.cs",
               "DocumentMoniker": "C:\\Users\\rhuba\\Coursework\\Assets\\Player_movement.cs",
               "RelativeDocumentMoniker": "Assets\\Player_movement.cs",
               "ToolTip": "C:\\Users\\rhuba\\Coursework\\Assets\\Player_movement.cs",
               "RelativeToolTip": "Assets\\Player_movement.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAcwIUAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowIUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T16:57:26.202Z",
               "EditorCaption": ""

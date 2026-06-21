@@ -2,11 +2,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using System.Numerics;
+using System;
 
 public class MainMenu : MonoBehaviour
 {
     private GameObject Menu;
     private GameObject SMenu;
+    private GameObject Play;
     public AudioMixer audiomixer;
     public static bool issprint = true;
     public Toggle sprinton;
@@ -14,7 +17,15 @@ public class MainMenu : MonoBehaviour
     {
         Menu = GameObject.Find("Menu");
         SMenu = GameObject.Find("Setting");
-        SMenu.SetActive(false);
+        Play = GameObject.Find("Canvas");
+        try
+        {
+            SMenu.SetActive(false);
+        }
+        catch (Exception e)
+        {
+            ;
+        }
     }
     //Starts the game
     public void StartGame()
@@ -48,6 +59,12 @@ public class MainMenu : MonoBehaviour
     public void VolumeChange(float volume)
     {
         audiomixer.SetFloat("volume", volume);
+    }
+
+    //Goes back to the starting menu
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }
 
