@@ -116,6 +116,7 @@ public class Player_movement : MonoBehaviour
     {
         if (bodies >= 9)
         {
+            Cursor.visible = true;
             SceneManager.LoadScene("Win");
         }
     }

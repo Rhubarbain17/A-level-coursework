@@ -230,6 +230,12 @@ ScriptsOnlyBuild:
   - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: ResetDebugManager
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: PlayAgain
+  - assembly: Assembly-CSharp
+    fullTypeName: MainMenu
+    methodName: PlayAgain
   sceneClasses:
     Assets/Scenes/Lose.unity:
     - Class: 1
@@ -249,7 +255,11 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1778}
+    - Class: 114
       Script: {instanceID: 1780}
+    - Class: 114
+      Script: {instanceID: 1820}
     - Class: 114
       Script: {instanceID: 5576}
     - Class: 114
@@ -262,6 +272,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10462}
     - Class: 114
       Script: {instanceID: 11376}
+    - Class: 114
+      Script: {instanceID: 11660}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -269,6 +281,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -381,10 +395,6 @@ ScriptsOnlyBuild:
     - Class: 49
       Script: {instanceID: 0}
     - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -546,7 +556,11 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1778}
+    - Class: 114
       Script: {instanceID: 1780}
+    - Class: 114
+      Script: {instanceID: 1820}
     - Class: 114
       Script: {instanceID: 5576}
     - Class: 114
@@ -561,6 +575,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10462}
     - Class: 114
       Script: {instanceID: 11376}
+    - Class: 114
+      Script: {instanceID: 11660}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128

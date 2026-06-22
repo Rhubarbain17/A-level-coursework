@@ -113,8 +113,9 @@ public class Monster_behaviour : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (monster_distance.sqrMagnitude <= 1)
+        if (monster_distance.sqrMagnitude <= 3)
         {
+            Cursor.visible = true;
             SceneManager.LoadScene("Lose");
         }
     }

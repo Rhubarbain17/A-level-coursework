@@ -7,12 +7,14 @@ public class Discover : MonoBehaviour
     public Player_movement count;
     private Collider2D hitbox;
     private AudioSource bell;
+    private AudioSource crow;
 
     void Start()
     {
         player = GameObject.Find("Player").transform;
-        bell = GetComponent<AudioSource>();
-        if (bell == null) Debug.LogError("bell not found!");
+        AudioSource[] audioSources = GetComponents<AudioSource>();
+        bell = audioSources[0];
+        crow = audioSources[1];
         count.bodies = 0;
         hitbox = GetComponent<Collider2D>();
     }
@@ -22,6 +24,7 @@ public class Discover : MonoBehaviour
         if (Mathf.Sqrt(Mathf.Pow(transform.position.x - player.position.x,2)) <= 5 || Mathf.Sqrt(Mathf.Pow(transform.position.y - player.position.y,2)) <= 5)
         {
             count.bodies += 1;
+            crow.Stop();
             bell.Play();
             Destroy(hitbox);
         }

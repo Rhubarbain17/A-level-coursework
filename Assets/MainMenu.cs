@@ -30,6 +30,7 @@ public class MainMenu : MonoBehaviour
     //Starts the game
     public void StartGame()
     {
+        Cursor.visible = false;
         SceneManager.LoadScene("Main");
     }
     //Opens the settings menu
